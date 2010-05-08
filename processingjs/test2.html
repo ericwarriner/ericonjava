@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="processing.js"></script>
+<script src="init.js"></script></head>
+<body><h1></h1>
+<h2>Test</h2>
+<script type="application/processing">
+
+// Global variables
+int radius = 40.0;
+int X, Y;
+int nX, nY;
+int delay = 16;
+int count =0;
+ArrayList points;
+PImage b;
+
+
+class Point {
+  float x, y; // X-coordinate, y-coordinate
+  // Constructor
+  Point(int xpos, int ypos) {
+    x = xpos;
+    y = ypos;
+  }
+}
+
+// Setup the Processing Canvas
+void setup(){
+  size( 300, 300 );
+  strokeWeight( 2 );
+  frameRate( 30 );
+  X = width / 2;
+  Y = height / 2;
+  nX = X;
+  nY = Y;  
+  points = new ArrayList();
+  points.add(new Point(X,Y));
+  
+  b = loadImage("graph.gif");
+	image(b, 0, 0);
+ // test[0] = ellipse( X+30, Y+30, radius, radius ); 
+}
+
+// Main draw loop
+void draw(){
+  image(b, 0, 0);
+  //radius = radius + sin( frameCount / 8 );
+  
+  // Track circle to new destination
+  X+=(nX-X)/delay;
+  Y+=(nY-Y)/delay;
+  
+  // Fill canvas grey
+ // background( 100 );
+  
+  // Set fill-color to blue
+  fill( 0, 121, 184 );
+  
+  // Set stroke-color white
+  stroke(1); 
+  if(count<90){
+  count++;
+  }else{
+  count =0;
+  points = new ArrayList();
+  }
+  // Draw circle
+  var xfac=X+radius/2*cos(frameCount*6*PI/135);
+  var yfac=Y+radius/2*sin(frameCount*6*PI/135);
+  //main circle
+  ellipse( X, Y, radius, radius ); 
+  //perimeter circle
+  ellipse( xfac ,yfac, 2, 2 );  
+  //draw point
+   points.add(new Point(60+count,yfac));
+   //drawing line
+  line(xfac ,yfac,60+count,yfac);
+  //line from center to perimeter of circle
+  line(X ,Y,xfac ,yfac);
+   
+   
+    for (int i = points.size()-1; i >= 0; i--) { 
+		Point ball = (Point) points.get(i);
+		point(ball.x,ball.y);
+	}
+   
+}
+
+
+// Set circle's next destination
+void mouseMoved(){
+ // nX = mouseX;
+ // nY = mouseY;  
+}
+void test(){
+alert("");  
+}
+void mousePressed(){
+  radius++; 
+}
+
+</script><canvas width="800" height="800"></canvas></p>
+<INPUT TYPE="BUTTON" onClick="Processing.test()" VALUE="Show">
+ERIC
+</body>
+</html>
