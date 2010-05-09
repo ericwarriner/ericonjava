@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/C%3A/msysgit/msysgit/ericonjava.com/BubbleBreaker/dist/" href="BubbleBreaker.jnlp">
+    <information>
+        <title>BubbleBreaker</title>
+        <vendor>${application.vendor}</vendor>
+        <homepage href="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/C%3A/msysgit/msysgit/ericonjava.com/BubbleBreaker/dist/"/>
+        <description>BubbleBreaker</description>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="BubbleBreaker.jar" main="true"/>
+    </resources>
+    <application-desc main-class="com.sun.javafx.runtime.main.Main">
+        <argument>MainJavaFXScript=bubblebreaker.Main</argument>
+    </application-desc>
+    <update check="always"/>
+</jnlp>
