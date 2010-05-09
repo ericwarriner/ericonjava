@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/C%3A/msysgit/msysgit/ericonjava.com/VaultBreaker/dist/" href="VaultBreaker.jnlp">
+    <information>
+        <title>VaultBreaker</title>
+        <vendor>${application.vendor}</vendor>
+        <homepage href="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/C%3A/msysgit/msysgit/ericonjava.com/VaultBreaker/dist/"/>
+        <description>VaultBreaker</description>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="VaultBreaker.jar" main="true"/>
+    </resources>
+    <application-desc main-class="com.sun.javafx.runtime.main.Main">
+        <argument>MainJavaFXScript=vaultbreaker.Main</argument>
+    </application-desc>
+    <update check="always"/>
+</jnlp>
