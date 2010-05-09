@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/C%3A/msysgit/msysgit/ericonjava.com/MagicAnswers/dist/" href="MagicAnswers_browser.jnlp">
+    <information>
+        <title>MagicAnswers</title>
+        <vendor>www.ericonjava.com</vendor>
+        <homepage href="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/C%3A/msysgit/msysgit/ericonjava.com/MagicAnswers/dist/"/>
+        <description>MagicAnswers</description>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <property name="jnlp.packEnabled" value="true"/>
+        <property name="jnlp.versionEnabled" value="true"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="MagicAnswers.jar" main="true"/>
+    </resources>
+    <applet-desc name="MagicAnswers" main-class="com.sun.javafx.runtime.adapter.Applet" width="200" height="200">
+        <param name="MainJavaFXScript" value="magicanswers.Main"/>
+    </applet-desc>
+    <update check="always"/>
+</jnlp>
