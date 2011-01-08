@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter IP address here: (e.g. 25.36.88.111)"/>
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="225dip"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label"/>
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="70dip"
+        android:layout_height="50dip"
+        android:layout_toRightOf="@id/entry"
+        android:layout_below="@id/label"
+        android:layout_marginLeft="10dip"
+        android:text="OK" />
+        
+     <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_marginTop="10dip"
+        android:layout_below="@id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="200dip"
+        android:clickable="true"
+        android:apiKey="0Pguc-Ti7nkyeaRXxqNZUOsJeyvYplrjGuL5mHg"
+    />
+        <TextView
+        android:id="@+id/display"
+        android:layout_below="@id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+        
+       <TextView
+        android:id="@+id/disclaimer"
+        android:layout_alignParentBottom ="true"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="8px"
+        android:text="This product includes GeoLite data created by MaxMind, available from http://www.maxmind.com/."/>
+
+</RelativeLayout>

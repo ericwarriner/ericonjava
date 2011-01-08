@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/EricSubversion/!svn/ver/91/TestIpChecker
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/EricSubversion/!svn/ver/90/TestIpChecker/default.properties
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/EricSubversion/!svn/ver/90/TestIpChecker/AndroidManifest.xml
+END
+drawing-1.svg
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/EricSubversion/!svn/ver/91/TestIpChecker/drawing-1.svg
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/EricSubversion/!svn/ver/81/TestIpChecker/.project
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/EricSubversion/!svn/ver/81/TestIpChecker/proguard.cfg
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/EricSubversion/!svn/ver/81/TestIpChecker/.classpath
+END
