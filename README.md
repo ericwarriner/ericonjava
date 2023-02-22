@@ -1,5 +1,5 @@
 ericonjava
 ==========
 
-Old code originally posted on ericonjava . com
-Domain is not longer under my control.
+Old code originally posted on ericonjava  .   com
+domain which is not longer under my control.
